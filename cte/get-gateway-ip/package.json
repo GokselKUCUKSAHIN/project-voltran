@@ -1,0 +1,17 @@
+{
+  "name": "get-gateway-ip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "get-gateway-ip.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "network": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.13"
+  }
+}
