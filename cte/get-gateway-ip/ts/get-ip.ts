@@ -20,9 +20,5 @@ export async function getPrivateIP(): Promise<string> {
 }
 
 (async _ => {
-    try {
-        console.log(await getGatewayIP());
-    } catch (ex) {
-        console.log(ex);
-    }
+    console.log(await getGatewayIP());
 })();
