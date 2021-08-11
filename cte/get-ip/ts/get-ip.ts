@@ -19,6 +19,7 @@ export async function getPrivateIP(): Promise<string> {
     return getCallback(network.get_private_ip);
 }
 
+// Test
 (async _ => {
     console.log(await getGatewayIP());
 })();
