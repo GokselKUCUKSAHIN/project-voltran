@@ -1,0 +1,28 @@
+{
+  "name": "voltron",
+  "version": "0.0.1",
+  "description": "Project Voltron.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node js/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GokselKUCUKSAHIN/project-voltron.git"
+  },
+  "keywords": [
+    "cluster",
+    "load-balancer",
+    "voltron"
+  ],
+  "author": "Goksel KUCUKSAHIN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GokselKUCUKSAHIN/project-voltron/issues"
+  },
+  "homepage": "https://github.com/GokselKUCUKSAHIN/project-voltron#readme",
+  "devDependencies": {
+    "@types/node": "^16.4.13"
+  }
+}
