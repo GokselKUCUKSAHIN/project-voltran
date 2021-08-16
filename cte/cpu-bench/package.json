@@ -1,20 +1,22 @@
 {
-  "name": "voltron",
-  "version": "0.0.2",
-  "description": "Project Voltron.",
-  "main": "main.js",
+  "name": "cpu-bench",
+  "version": "0.0.4",
+  "description": "Basic CPU benchmarking tool. Single-Thread Only.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node js/main.js"
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GokselKUCUKSAHIN/project-voltron.git"
   },
   "keywords": [
-    "cluster",
-    "load-balancer",
-    "voltron"
+    "cpu",
+    "benchmark",
+    "score"
   ],
   "author": "Goksel KUCUKSAHIN",
   "license": "MIT",
@@ -23,9 +25,6 @@
   },
   "homepage": "https://github.com/GokselKUCUKSAHIN/project-voltron#readme",
   "devDependencies": {
-    "@types/node": "^16.4.13"
-  },
-  "dependencies": {
-    "cpu-bench": "^0.0.4"
+    "typescript": "^4.3.5"
   }
 }
