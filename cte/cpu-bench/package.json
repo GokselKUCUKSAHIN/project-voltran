@@ -1,6 +1,6 @@
 {
   "name": "cpu-bench",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Basic CPU benchmarking tool. Single-Thread Only.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
