@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/GokselKUCUKSAHIN/project-voltron#readme",
   "devDependencies": {
-    "@types/node": "^16.4.13"
+    "@types/node": "^16.6.1"
   },
   "dependencies": {
     "cpu-bench": "^0.0.5"

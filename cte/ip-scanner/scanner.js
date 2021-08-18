@@ -13,3 +13,7 @@ function checkIPs(ip) {
 for (let i = 1; i < 254; i++) {
   checkIPs(`192.168.1.${i}`);
 }
+
+for (let i = 1; i < 254; i++) {
+  checkIPs(`192.168.20.${i}`);
+}

@@ -1,0 +1,20 @@
+{
+  "name": "demo-greet",
+  "version": "0.0.2",
+  "description": "Demo project for executable node commands.",
+  "main": "./lib/my-greet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/index.js"
+  },
+  "bin": {
+    "greet": "./bin/index.js"
+  },
+  "keywords": [
+    "exec",
+    "greet",
+    "demo"
+  ],
+  "author": "Goksel KUCUKSAHIN",
+  "license": "MIT"
+}
