@@ -1,0 +1,30 @@
+{
+  "name": "verman",
+  "version": "0.1.2",
+  "description": "Basic version npm module version manager.",
+  "main": "index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "verman": "bin/verman-cmd.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "version",
+    "manager",
+    "npm",
+    "module",
+    "cli"
+  ],
+  "author": "Goksel KUCUKSAHIN",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.6.2"
+  }
+}

@@ -26,6 +26,6 @@
     "@types/node": "^16.6.1"
   },
   "dependencies": {
-    "cpu-bench": "^0.0.5"
+    "cpu-bench": "^0.0.4"
   }
 }
