@@ -1,7 +1,7 @@
 {
   "name": "cpu-bench",
-  "version": "0.3.1",
-  "description": "Basic CPU benchmarking tool. Single-Thread Only.",
+  "version": "0.3.5",
+  "description": "Basic CPU benchmarking tool.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -18,6 +18,9 @@
   },
   "keywords": [
     "cpu",
+    "single",
+    "multi",
+    "core",
     "benchmark",
     "score"
   ],

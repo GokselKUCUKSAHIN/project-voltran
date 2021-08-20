@@ -66,7 +66,7 @@ function multiCoreLoadPromiseArray(sampleSize: number, scaler: number): Promise<
   return promiseArray;
 }
 
-async function multiCoreLoad(sampleSize: number = 512, scaler: number = 10_000): Promise<number> {
+async function multiCoreLoad(sampleSize: number = 64, scaler: number = 100_000): Promise<number> {
   const resultArray = await Promise.all(multiCoreLoadPromiseArray(sampleSize, scaler));
   return sum(resultArray);
 }
@@ -77,7 +77,7 @@ async function cpuMultiCoreScore(count: number = 1): Promise<number> {
     await multiCoreLoad();
   }
   const deltaTime = Date.now() - startTime;
-  return 100_000_000 / deltaTime;
+  return 15_000_000 / deltaTime;
 }
 
 export async function cpuMultiCoreBench(): Promise<number> {
