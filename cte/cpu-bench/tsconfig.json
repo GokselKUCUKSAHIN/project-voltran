@@ -4,7 +4,7 @@
     "target": "esnext",
     "sourceMap": false,
     "outDir": "./dist",
-    "rootDir": "./",
+    "rootDir": "./src",
     "moduleResolution": "node",
     "removeComments": true,
     "declaration": true,
