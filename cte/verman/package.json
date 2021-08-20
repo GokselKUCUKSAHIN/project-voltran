@@ -1,6 +1,6 @@
 {
   "name": "verman",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "Basic version npm module version manager.",
   "main": "index.js",
   "types": "./dist/index.d.ts",
@@ -11,9 +11,6 @@
   },
   "bin": {
     "verman": "bin/verman-cmd.js"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "version",

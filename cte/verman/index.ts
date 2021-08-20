@@ -6,16 +6,17 @@ interface Package {
   version: string;
 }
 
-const VERSION = '0.1.0';
+const VERSION = '0.1.5';
 
-const HELP_MESSAGE = `verman version ${VERSION}, (c) 2021 Goksel KUCUKSAHIN
+const HELP_MESSAGE = `
+verman version ${VERSION}, (c) 2021 Goksel KUCUKSAHIN
+
 Usage: verman [command]
   Commands:
   -- [help], [-help], [-h]  : Prints Help Text 
-  -- [bump], [-bump], [-b]  : Increments revision number.                        | x.y.z  --> x.y.z+1 |
-  -- [minor], [min], [-min] : Increments minor version number and zeros rest.    | x.y.z  --> x.y+1.0 |
-  -- [major], [maj], [-maj] : Increments major version number and zeros rest.    | x.y.z  --> x+1.0.0 |
-
+  -- [bump], [-bump], [-b]  : Increments revision number.                      | x.y.z  --> x.y.z+1 |
+  -- [minor], [min], [-min] : Increments minor version number and zeros rest.  | x.y.z  --> x.y+1.0 |
+  -- [major], [maj], [-maj] : Increments major version number and zeros rest.  | x.y.z  --> x+1.0.0 |
 `
 
 const CMDS: commandFunction[] = [incBump, incMinor, incMajor];
@@ -98,7 +99,7 @@ function help(): void {
 
 export function verman(): void {
   const args = getProcessArgv();
-  if (args.length >= 1) {
+  if (args.length > 0) {
     const cmd = command(args[0]);
     if (cmd > -1) {
       let file = "";
@@ -119,5 +120,8 @@ export function verman(): void {
     } else if (cmd === -1) {
       help();
     }
+  }else{
+    console.log("You need to pass a parameter.");
+    help();
   }
 }
