@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/GokselKUCUKSAHIN/project-voltron#readme",
   "devDependencies": {
-    "@types/node": "^16.6.2",
+    "@types/node": "^16.7.1",
     "typescript": "^4.3.5"
   }
 }
