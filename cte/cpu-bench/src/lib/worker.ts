@@ -1,5 +1,20 @@
 import * as workerThread from "worker_threads";
 
+/*
+import * as events from "events";
+import * as os from "os";
+
+const eventEmitter = new events.EventEmitter();
+eventEmitter.on('done', done);
+
+const cpuCount = os.cpus().length;
+
+
+function done(arg: number) {
+  console.log("done by", arg);
+}
+*/
+
 export interface LineerBody {
   start: number;
   end: number;
@@ -19,6 +34,7 @@ function solve(start: number, end: number): number {
   for (let i = start; i < end; i++) {
     sum += lineerFunction(i);
   }
+  // eventEmitter.emit('done', sum);
   return sum;
 }
 

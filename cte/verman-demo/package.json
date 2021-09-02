@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cpu-bench": "^0.3.5",
+    "cpu-bench": "^0.3.6",
     "verman": "^0.1.0"
+  },
+  "devDependencies": {
+    "object-sizeof": "^1.6.1"
   }
 }
